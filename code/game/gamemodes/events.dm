@@ -131,7 +131,7 @@
 		S.update_icon()
 		S.power_change()
 	for(var/area/A in world)
-		if(!istype(A, /area/space) && !istype(A, /area/shuttle) && !istype(A,/area/arrival))
+		if(!istype(A, /area/wasteland) && !istype(A, /area/shuttle) && !istype(A,/area/arrival))
 			A.power_light = 1
 			A.power_equip = 1
 			A.power_environ = 1

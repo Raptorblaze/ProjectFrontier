@@ -101,7 +101,7 @@ datum/controller/air_system
 			if(istype(S))
 				air_master.add_to_active(S)
 
-/datum/controller/air_system/proc/setup_allturfs()
+/datum/controller/air_system/proc/setup_allturfs() //This one raptor, kill this one
 	for(var/turf/simulated/T in world)
 		T.CalculateAdjacentTurfs()
 		if(!T.blocks_air)
